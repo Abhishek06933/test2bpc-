@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" prefHeight="562.0" prefWidth="340.0" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.test2bpc.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <TextField fx:id="AProductID" promptText="ProductID" />
+   <TextField fx:id="AProductName" promptText="ProductName" />
+   <TextField fx:id="AProductPrice" promptText="ProductPrice" />
+   <TextField fx:id="AProductQuantity" promptText="ProductQuantity" />
+    <Button fx:id="Load" onAction="#onHelloButtonClick" text="Load" />
+   <Button mnemonicParsing="false" layoutX="159.0" layoutY="250.0" onAction="#InsertData" text="Insert" />
+   <Button mnemonicParsing="false" layoutX="152.0" layoutY="296.0" onAction="#DeleteData" text="Delete" />
+   <Button mnemonicParsing="false" layoutX="157.0" layoutY="212.0" onAction="#UpdateData" text="Update" />
+
+    <Label fx:id="welcomeText" />
+   <TableView fx:id="tableView" prefHeight="200.0" prefWidth="200.0">
+     <columns>
+       <TableColumn fx:id="ProductID" prefWidth="75.0" text="ProductID" />
+       <TableColumn fx:id="ProductName" prefWidth="75.0" text="ProductName" />
+         <TableColumn fx:id="ProductPrice" prefWidth="75.0" text="ProductPrice" />
+         <TableColumn fx:id="ProductQuantity" prefWidth="75.0" text="ProductQuantity" />
+     </columns>
+   </TableView>
+</VBox>
